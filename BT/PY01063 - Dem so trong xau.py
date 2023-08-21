@@ -3,11 +3,9 @@ while t:
     s = input()
     n = input()
     cnt = 0
-    idx = 0
-    while idx <= len(s):
-        if s.find(n, idx):
-            cnt += 1
-            idx += s.find(n, idx) + len(n)
-            print(s.find(n, idx))  
+    idx = s.find(n)
+    while idx != -1:
+        cnt += 1
+        idx = s.find(n, idx + len(n))
     print(cnt)
     t -= 1
