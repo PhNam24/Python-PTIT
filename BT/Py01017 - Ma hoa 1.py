@@ -10,5 +10,5 @@ while t:
         if s[i] != s[i + 1]:
             print(d[s[i]], s[i], sep = "", end = "")
             d[s[i]] = 0 
-    print("\n")
+    print()
     t -= 1
