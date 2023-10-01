@@ -1,4 +1,4 @@
-n = int(input());
+n = int(input())
 a = list(map(int, input().split()))
 idx = 1
 while idx < len(a):
