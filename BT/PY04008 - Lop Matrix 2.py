@@ -15,10 +15,16 @@ class Matrix:
     
 t = int(input())
 while t:
-    n, m = map(int, input().split())
+    inp = []
+    while len(inp) < 2:
+        inp += list(map(int, input().split()))
+    n, m = inp[0], inp[1]
     a = []
-    for i in range(n):
-        a.append(list(map(int, input().split())))
+    while len(a) < n:
+        tmp = []
+        while len(tmp) < m:
+            tmp += list(map(int, input().split()))
+        a.append(tmp)
     mat = Matrix(n, m, a)
     b = []
     for i in range(m) :
